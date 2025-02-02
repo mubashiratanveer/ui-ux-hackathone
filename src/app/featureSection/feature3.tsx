@@ -1,11 +1,16 @@
 
 import React from 'react';
-
+import Image from 'next/image';
 export default function FeatureSection3(){
   return (
     <div className="container mx-auto py-8 px-4 bg-white my-12 rounded-lg flex flex-col md:flex-row items-center md:items-start gap-6">
       <div className="md:w-1/2">
-        <img src="projectPics/Feature pic2.png" alt="Studio Image" className="w-full h-full object-cover rounded-lg" />
+        <Image
+         src="/projectPics/Feature pic2.png" 
+         alt="Studio Image" 
+         className="w-full h-full object-cover rounded-lg"
+         width={200}
+         height={200} />
       </div>
       <div className="md:w-1/2 flex flex-col justify-center text-left">
         <h2 className="text-3xl font-bold mb-4 p-9 text-primary-900">Our service isn’t just personal, it’s actually

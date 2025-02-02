@@ -3,11 +3,10 @@
 
 import HeroSection from "./hero/page";
 
-
 export default function Home(){
   return(
     <div >
-          <title>Hackathone e-commerce-project </title>
+          <title>Hackathon Marketplace product </title>
           <HeroSection/>
     </div>
   )

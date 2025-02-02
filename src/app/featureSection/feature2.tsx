@@ -2,8 +2,9 @@
 
 
 import React from 'react';
-
+import Image from 'next/image';
 export default function FeatureSection2(){
+  
   return (
     <div className="container mx-auto py-8 px-4 bg-white my-12 rounded-lg flex flex-col md:flex-row items-center md:items-start gap-6">
       <div className="md:w-1/2 flex flex-col justify-center text-left">
@@ -17,7 +18,12 @@ export default function FeatureSection2(){
           hover:text-primary-900">Get in Touch</button>
       </div>
       <div className="md:w-1/2">
-        <img src="projectPics/Feature pic.png" alt="Studio Image" className="w-full h-full object-cover rounded-lg" />
+        <Image 
+        src="/projectPics/Feature pic.png" 
+        alt="Studio Image"
+         className="w-full h-full object-cover rounded-lg" 
+         width={200}
+         height={200}/>
       </div>
     </div>
   );

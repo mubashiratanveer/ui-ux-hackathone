@@ -2,11 +2,12 @@
 'use client'
 import FeatureSection1 from '../featureSection/featur1';
 import NewCeramics from '../components/newCeramics';
-import PopularProducts from '../components/ourPopularProduct';
+import PopularProducts from '../components/ourPopularProducts';
 import EmailSignup from '../components/emailSignUp';
 import FeatureSection2 from '../featureSection/feature2';
-
+import Image from 'next/image';
 import React, { useState } from 'react';
+
 
 export default  function HeroSection(){
   const [showImage, setShowImage] = useState(false);
@@ -31,10 +32,12 @@ export default  function HeroSection(){
         </button>
         {showImage && (
           <div className="mt-4 lg:hidden">
-            <img
-              src="projectPics/Right Image.png"
+            <Image
+              src="/projectPics/Right_Image.png"
               alt="Furniture Image"
               className="w-full h-80 object-cover rounded-lg"
+              width={200}
+              height={200}
             />
           </div>
         )}
@@ -43,10 +46,12 @@ export default  function HeroSection(){
         </p>
       </div>
       <div className="md:w-1/2 h-[300px] md:h-full hidden md:flex">
-        <img
-          src="projectPics/Right Image.png"
+        <Image
+          src="/projectPics/Right_Image.png"
           alt="Furniture Image"
           className="w-full h-full object-cover flex  "
+          width={200}
+          height={200}
         />
       </div>   
     </div>
